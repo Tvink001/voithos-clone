@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Voithos AI design tokens — colors and fonts for the UI.
+   Teal #00A898, gold #FFC00E, ink #424242, cream sections (#F9F3E3), white page. */
+@theme {
+  --color-bg: #ffffff;
+  --color-surface: #f9f3e3;          /* cream band = gold #c79000 @ 11% over white */
+  --color-primary: #00a898;          /* teal — buttons, links, active nav */
+  --color-primary-dark: #009185;     /* teal hover */
+  --color-secondary: #ffc00e;        /* gold accent */
+  --color-ink: #424242;              /* main text */
+  --color-ink-strong: #212121;       /* headings / strong text */
+  --color-muted: #757575;            /* secondary text */
+  --color-faint: #999999;            /* placeholders */
+  --color-line: #eeeeee;             /* borders / dividers */
+  --color-beta: #000aa8;             /* beta badge text */
+}
+
+@theme inline {
+  --font-heading: var(--font-libre-baskerville), Georgia, "Times New Roman", serif;
+  --font-sans: -apple-system, "Segoe UI", Roboto, Ubuntu, "SF Pro Text", system-ui,
+    "Helvetica Neue", sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
